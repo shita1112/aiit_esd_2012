@@ -1,15 +1,15 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Name:</b>
+  <b>名前:(Name:)</b>
   <%= @address.name %>
 </p>
 
 <p>
-  <b>Email:</b>
+  <b>メールアドレス:(Email:)</b>
   <%= @address.email %>
 </p>
 
 
-<%= link_to 'Edit', edit_address_path(@address) %> |
-<%= link_to 'Back', addresses_path %>
+<%= link_to '編集画面へ移動(Edit)', edit_address_path(@address) %> |
+<%= link_to 'トップページへ戻る(Back)', addresses_path %>

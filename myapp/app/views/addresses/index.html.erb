@@ -1,9 +1,9 @@
-<h1>Listing addresses</h1>
+<h1>アドレス帳(Listing addresses)</h1>
 
 <table>
   <tr>
-    <th>Name</th>
-    <th>Email</th>
+    <th>名前(Name)</th>
+    <th>メールアドレス(Email)</th>
     <th></th>
     <th></th>
     <th></th>
@@ -13,13 +13,13 @@
   <tr>
     <td><%= address.name %></td>
     <td><%= address.email %></td>
-    <td><%= link_to 'Show', address %></td>
-    <td><%= link_to 'Edit', edit_address_path(address) %></td>
-    <td><%= link_to 'Destroy', address, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+    <td><%= link_to 'このアドレスを表示します(Show)', address %></td>
+    <td><%= link_to 'このアドレスを編集します(Edit)', edit_address_path(address) %></td>
+    <td><%= link_to 'このアドレスを破棄します(Destroy)', address, :method => :delete, :data => { :confirm => '破棄しますがよろしいですか？(Are you sure?)' } %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Address', new_address_path %>
+<%= link_to '新しいアドレスを追加します(New Address)', new_address_path %>
