@@ -1,0 +1,2815 @@
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (23.5ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (8.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateAddresses (20121221130603)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "addresses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121221130603')[0m
+  [1m[35m (7.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started GET "/" for 192.168.56.1 at Fri Dec 21 22:07:49 +0900 2012
+Connecting to database specified by database.yml
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.9) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.9) lib/rails/commands.rb:55
+  railties (3.2.9) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.9) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /var/lib/gems/1.8/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.4ms)
+
+
+Started GET "/" for 192.168.56.1 at Fri Dec 21 22:08:10 +0900 2012
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.9) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.9) lib/rails/commands.rb:55
+  railties (3.2.9) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.9) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /var/lib/gems/1.8/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/" for 192.168.56.1 at Fri Dec 21 22:08:12 +0900 2012
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.9) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.9) lib/rails/commands.rb:55
+  railties (3.2.9) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.9) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /var/lib/gems/1.8/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.1ms)
+
+
+Started GET "/addresss" for 192.168.56.1 at Fri Dec 21 22:08:43 +0900 2012
+
+ActionController::RoutingError (No route matches [GET] "/addresss"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.9) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.9) lib/rails/commands.rb:55
+  railties (3.2.9) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.9) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /var/lib/gems/1.8/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/address" for 192.168.56.1 at Fri Dec 21 22:08:46 +0900 2012
+
+ActionController::RoutingError (No route matches [GET] "/address"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.9) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.9) lib/rails/commands.rb:55
+  railties (3.2.9) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.9) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /var/lib/gems/1.8/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/addresses" for 192.168.56.1 at Fri Dec 21 22:08:48 +0900 2012
+Processing by AddressesController#index as HTML
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT "addresses".* FROM "addresses" [0m
+  Rendered addresses/index.html.erb within layouts/application (1.3ms)
+Compiled addresses.css  (3ms)  (pid 2479)
+Compiled scaffolds.css  (23ms)  (pid 2479)
+Compiled application.css  (45ms)  (pid 2479)
+Compiled jquery.js  (6ms)  (pid 2479)
+Compiled jquery_ujs.js  (0ms)  (pid 2479)
+Compiled addresses.js  (160ms)  (pid 2479)
+Compiled application.js  (205ms)  (pid 2479)
+Completed 200 OK in 451ms (Views: 434.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Fri Dec 21 22:08:49 +0900 2012
+Served asset /application.css - 200 OK (8ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 21 22:08:49 +0900 2012
+Served asset /addresses.css - 200 OK (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 21 22:08:49 +0900 2012
+Served asset /scaffolds.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Fri Dec 21 22:08:49 +0900 2012
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Fri Dec 21 22:08:49 +0900 2012
+Served asset /jquery_ujs.js - 200 OK (8ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 21 22:08:49 +0900 2012
+Served asset /addresses.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Fri Dec 21 22:08:49 +0900 2012
+Served asset /application.js - 200 OK (24ms)
+
+
+Started GET "/addresses/new" for 192.168.56.1 at Fri Dec 21 22:09:01 +0900 2012
+Processing by AddressesController#new as HTML
+  Rendered addresses/_form.html.erb (5.9ms)
+  Rendered addresses/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 22ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/addresses" for 192.168.56.1 at Fri Dec 21 22:09:40 +0900 2012
+Processing by AddressesController#create as HTML
+  Parameters: {"address"=>{"email"=>"a1125ts@aiit.ac.jp", "name"=>"tshibata"}, "commit"=>"Create Address", "authenticity_token"=>"Gg7db6UjeSnXNabGa/YZuWV30llu9XZEGfDIFacV+KE=", "utf8"=>"✓"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.8ms)[0m  [1mINSERT INTO "addresses" ("created_at", "email", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Fri, 21 Dec 2012 13:09:40 UTC +00:00], ["email", "a1125ts@aiit.ac.jp"], ["name", "tshibata"], ["updated_at", Fri, 21 Dec 2012 13:09:40 UTC +00:00]]
+  [1m[35m (13.4ms)[0m  commit transaction
+Redirected to http://192.168.56.101:3000/addresses/1
+Completed 302 Found in 22ms (ActiveRecord: 16.3ms)
+
+
+Started GET "/addresses/1" for 192.168.56.1 at Fri Dec 21 22:09:40 +0900 2012
+Processing by AddressesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAddress Load (0.3ms)[0m  [1mSELECT "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered addresses/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 11ms (Views: 7.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 21 22:09:40 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 21 22:09:40 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 21 22:09:40 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses" for 192.168.56.1 at Fri Dec 21 22:09:43 +0900 2012
+Processing by AddressesController#index as HTML
+  [1m[35mAddress Load (0.2ms)[0m  SELECT "addresses".* FROM "addresses" 
+  Rendered addresses/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 21 22:09:43 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 21 22:09:43 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 21 22:09:43 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses/new" for 192.168.56.1 at Fri Dec 21 22:09:46 +0900 2012
+Processing by AddressesController#new as HTML
+  Rendered addresses/_form.html.erb (4.6ms)
+  Rendered addresses/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 21 22:09:46 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 21 22:09:46 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 21 22:09:46 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started POST "/addresses" for 192.168.56.1 at Fri Dec 21 22:09:53 +0900 2012
+Processing by AddressesController#create as HTML
+  Parameters: {"address"=>{"email"=>"hugahuga", "name"=>"huga"}, "commit"=>"Create Address", "authenticity_token"=>"Gg7db6UjeSnXNabGa/YZuWV30llu9XZEGfDIFacV+KE=", "utf8"=>"✓"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "addresses" ("created_at", "email", "name", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Fri, 21 Dec 2012 13:09:53 UTC +00:00], ["email", "hugahuga"], ["name", "huga"], ["updated_at", Fri, 21 Dec 2012 13:09:53 UTC +00:00]]
+  [1m[36m (7.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://192.168.56.101:3000/addresses/2
+Completed 302 Found in 11ms (ActiveRecord: 7.9ms)
+
+
+Started GET "/addresses/2" for 192.168.56.1 at Fri Dec 21 22:09:53 +0900 2012
+Processing by AddressesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAddress Load (0.1ms)[0m  SELECT "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered addresses/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 21 22:09:53 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 21 22:09:53 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 21 22:09:53 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/addresses" for 192.168.56.1 at Fri Dec 21 22:09:55 +0900 2012
+Processing by AddressesController#index as HTML
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT "addresses".* FROM "addresses" [0m
+  Rendered addresses/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 21 22:09:55 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 21 22:09:55 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 21 22:09:55 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses" for 192.168.56.1 at Sat Dec 22 14:44:06 +0900 2012
+Connecting to database specified by database.yml
+Processing by AddressesController#index as HTML
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT "addresses".* FROM "addresses" [0m
+  Rendered addresses/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 126ms (Views: 64.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Sat Dec 22 14:44:11 +0900 2012
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Sat Dec 22 14:44:11 +0900 2012
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Sat Dec 22 14:44:11 +0900 2012
+Served asset /addresses.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Sat Dec 22 14:44:11 +0900 2012
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Sat Dec 22 14:44:11 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Sat Dec 22 14:44:11 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Sat Dec 22 14:44:11 +0900 2012
+Served asset /addresses.js - 304 Not Modified (1ms)
+
+
+Started GET "/addresses" for 192.168.56.1 at Sat Dec 22 14:44:20 +0900 2012
+Processing by AddressesController#index as HTML
+  [1m[35mAddress Load (0.2ms)[0m  SELECT "addresses".* FROM "addresses" 
+  Rendered addresses/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Sat Dec 22 14:44:25 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Sat Dec 22 14:44:25 +0900 2012
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Sat Dec 22 14:44:25 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Sat Dec 22 14:44:25 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Sat Dec 22 14:44:25 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Sat Dec 22 14:44:25 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Sat Dec 22 14:44:25 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses/new" for 192.168.56.1 at Sat Dec 22 14:45:40 +0900 2012
+Processing by AddressesController#new as HTML
+  Rendered addresses/_form.html.erb (9.2ms)
+  Rendered addresses/new.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 63ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Sat Dec 22 14:45:46 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Sat Dec 22 14:45:46 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Sat Dec 22 14:45:46 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Sat Dec 22 14:45:46 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Sat Dec 22 14:45:46 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Sat Dec 22 14:45:46 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Sat Dec 22 14:45:46 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses/new" for 192.168.56.1 at Sat Dec 22 14:45:49 +0900 2012
+Processing by AddressesController#new as HTML
+  Rendered addresses/_form.html.erb (2.0ms)
+  Rendered addresses/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Sat Dec 22 14:45:54 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Sat Dec 22 14:45:54 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Sat Dec 22 14:45:54 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Sat Dec 22 14:45:54 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Sat Dec 22 14:45:54 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Sat Dec 22 14:45:54 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Sat Dec 22 14:45:54 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses" for 192.168.56.1 at Sat Dec 22 14:45:56 +0900 2012
+Processing by AddressesController#index as HTML
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT "addresses".* FROM "addresses" [0m
+  Rendered addresses/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Sat Dec 22 14:45:57 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Sat Dec 22 14:45:57 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Sat Dec 22 14:45:57 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Sat Dec 22 14:45:57 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Sat Dec 22 14:45:57 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Sat Dec 22 14:45:57 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Sat Dec 22 14:45:57 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses" for 192.168.56.1 at Sat Dec 22 17:18:12 +0900 2012
+Processing by AddressesController#index as HTML
+  [1m[35mAddress Load (0.0ms)[0m  SELECT "addresses".* FROM "addresses" 
+  Rendered addresses/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Sat Dec 22 17:18:17 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Sat Dec 22 17:18:17 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Sat Dec 22 17:18:17 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Sat Dec 22 17:18:17 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Sat Dec 22 17:18:17 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Sat Dec 22 17:18:17 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Sat Dec 22 17:18:17 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses" for 192.168.56.1 at Sat Dec 22 17:18:33 +0900 2012
+Processing by AddressesController#index as HTML
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT "addresses".* FROM "addresses" [0m
+  Rendered addresses/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Sat Dec 22 17:18:33 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Sat Dec 22 17:18:33 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Sat Dec 22 17:18:33 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Sat Dec 22 17:18:33 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Sat Dec 22 17:18:33 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Sat Dec 22 17:18:33 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Sat Dec 22 17:18:33 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses/2/edit" for 192.168.56.1 at Sat Dec 22 17:18:37 +0900 2012
+Processing by AddressesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAddress Load (0.3ms)[0m  SELECT "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered addresses/_form.html.erb (4.7ms)
+  Rendered addresses/edit.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 17ms (Views: 14.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Sat Dec 22 17:18:37 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Sat Dec 22 17:18:37 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Sat Dec 22 17:18:37 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Sat Dec 22 17:18:37 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Sat Dec 22 17:18:37 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Sat Dec 22 17:18:37 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Sat Dec 22 17:18:37 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started PUT "/addresses/2" for 192.168.56.1 at Sat Dec 22 17:18:45 +0900 2012
+Processing by AddressesController#update as HTML
+  Parameters: {"commit"=>"Update Address", "authenticity_token"=>"Gg7db6UjeSnXNabGa/YZuWV30llu9XZEGfDIFacV+KE=", "utf8"=>"✓", "id"=>"2", "address"=>{"name"=>"huga", "email"=>"piyopiyo"}}
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mUPDATE "addresses" SET "updated_at" = '2012-12-22 08:18:45.394694', "email" = 'piyopiyo' WHERE "addresses"."id" = 2[0m
+  [1m[35m (14.6ms)[0m  commit transaction
+Redirected to http://192.168.56.101:3000/addresses/2
+Completed 302 Found in 28ms (ActiveRecord: 15.1ms)
+
+
+Started GET "/addresses/2" for 192.168.56.1 at Sat Dec 22 17:18:45 +0900 2012
+Processing by AddressesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered addresses/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Sat Dec 22 17:18:45 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Sat Dec 22 17:18:45 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Sat Dec 22 17:18:45 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Sat Dec 22 17:18:45 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Sat Dec 22 17:18:45 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Sat Dec 22 17:18:45 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Sat Dec 22 17:18:45 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses" for 192.168.56.1 at Sat Dec 22 17:18:47 +0900 2012
+Processing by AddressesController#index as HTML
+  [1m[35mAddress Load (0.2ms)[0m  SELECT "addresses".* FROM "addresses" 
+  Rendered addresses/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Sat Dec 22 17:18:52 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Sat Dec 22 17:18:52 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Sat Dec 22 17:18:52 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Sat Dec 22 17:18:52 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Sat Dec 22 17:18:52 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Sat Dec 22 17:18:52 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Sat Dec 22 17:18:52 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses" for 192.168.56.1 at Sat Dec 22 17:23:12 +0900 2012
+Processing by AddressesController#index as HTML
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT "addresses".* FROM "addresses" [0m
+  Rendered addresses/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Sat Dec 22 17:23:22 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Sat Dec 22 17:23:22 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Sat Dec 22 17:23:22 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Sat Dec 22 17:23:22 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Sat Dec 22 17:23:22 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Sat Dec 22 17:23:22 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Sat Dec 22 17:23:22 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses" for 192.168.56.1 at Sat Dec 22 17:26:54 +0900 2012
+Processing by AddressesController#index as HTML
+  [1m[35mAddress Load (0.2ms)[0m  SELECT "addresses".* FROM "addresses" 
+  Rendered addresses/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Sat Dec 22 17:27:04 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Sat Dec 22 17:27:04 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Sat Dec 22 17:27:09 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Sat Dec 22 17:27:09 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Sat Dec 22 17:27:09 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Sat Dec 22 17:27:09 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Sat Dec 22 17:27:09 +0900 2012
+Served asset /application.js - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateAddresses (20121221130603)
+Migrating to CreateAddress2s (20121222084000)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "address2s" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20121222084000')[0m
+  [1m[35m (15.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started GET "/address2s" for 192.168.56.1 at Sat Dec 22 17:40:33 +0900 2012
+Processing by Address2sController#index as HTML
+  [1m[36mAddress2 Load (0.1ms)[0m  [1mSELECT "address2s".* FROM "address2s" [0m
+  Rendered address2s/index.html.erb within layouts/application (0.9ms)
+Compiled address2s.css  (3ms)  (pid 2402)
+Compiled application.css  (11ms)  (pid 2402)
+Compiled address2s.js  (90ms)  (pid 2402)
+Compiled application.js  (143ms)  (pid 2402)
+Completed 200 OK in 208ms (Views: 206.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Sat Dec 22 17:40:43 +0900 2012
+Served asset /address2s.js - 200 OK (2ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Sat Dec 22 17:40:43 +0900 2012
+Served asset /address2s.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Sat Dec 22 17:40:48 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Sat Dec 22 17:40:48 +0900 2012
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Sat Dec 22 17:40:48 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Sat Dec 22 17:40:48 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Sat Dec 22 17:40:48 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Sat Dec 22 17:40:48 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Sat Dec 22 17:40:48 +0900 2012
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/address2s/new" for 192.168.56.1 at Sat Dec 22 17:40:58 +0900 2012
+Processing by Address2sController#new as HTML
+  Rendered address2s/_form.html.erb (3.6ms)
+  Rendered address2s/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 16ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Sat Dec 22 17:41:08 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Sat Dec 22 17:41:08 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Sat Dec 22 17:41:08 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Sat Dec 22 17:41:08 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Sat Dec 22 17:41:08 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Sat Dec 22 17:41:08 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Sat Dec 22 17:41:08 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Sat Dec 22 17:41:08 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Sat Dec 22 17:41:08 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/address2s" for 192.168.56.1 at Sat Dec 22 17:41:24 +0900 2012
+Processing by Address2sController#create as HTML
+  Parameters: {"commit"=>"Create Address2", "address2"=>{"name"=>"tshibata", "email"=>"a1125ts@aiit.ac.jp"}, "authenticity_token"=>"Gg7db6UjeSnXNabGa/YZuWV30llu9XZEGfDIFacV+KE=", "utf8"=>"✓"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "address2s" ("created_at", "email", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", Sat, 22 Dec 2012 08:41:24 UTC +00:00], ["email", "a1125ts@aiit.ac.jp"], ["name", "tshibata"], ["updated_at", Sat, 22 Dec 2012 08:41:24 UTC +00:00]]
+  [1m[35m (11.3ms)[0m  commit transaction
+Redirected to http://192.168.56.101:3000/address2s/1
+Completed 302 Found in 16ms (ActiveRecord: 11.6ms)
+
+
+Started GET "/address2s/1" for 192.168.56.1 at Sat Dec 22 17:41:24 +0900 2012
+Processing by Address2sController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAddress2 Load (0.2ms)[0m  [1mSELECT "address2s".* FROM "address2s" WHERE "address2s"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered address2s/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Sat Dec 22 17:41:24 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Sat Dec 22 17:41:24 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Sat Dec 22 17:41:24 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Sat Dec 22 17:41:24 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Sat Dec 22 17:41:24 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Sat Dec 22 17:41:24 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Sat Dec 22 17:41:24 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Sat Dec 22 17:41:24 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Sat Dec 22 17:41:24 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/address2s" for 192.168.56.1 at Sat Dec 22 17:41:27 +0900 2012
+Processing by Address2sController#index as HTML
+  [1m[35mAddress2 Load (0.2ms)[0m  SELECT "address2s".* FROM "address2s" 
+  Rendered address2s/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Sat Dec 22 17:41:32 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Sat Dec 22 17:41:32 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Sat Dec 22 17:41:32 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Sat Dec 22 17:41:32 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Sat Dec 22 17:41:32 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Sat Dec 22 17:41:32 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Sat Dec 22 17:41:32 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Sat Dec 22 17:41:32 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Sat Dec 22 17:41:32 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/address2s" for 192.168.56.1 at Sat Dec 22 17:41:49 +0900 2012
+Processing by Address2sController#index as HTML
+  [1m[36mAddress2 Load (0.2ms)[0m  [1mSELECT "address2s".* FROM "address2s" [0m
+  Rendered address2s/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Sat Dec 22 17:41:49 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Sat Dec 22 17:41:49 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Sat Dec 22 17:41:49 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Sat Dec 22 17:41:49 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Sat Dec 22 17:41:49 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Sat Dec 22 17:41:49 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Sat Dec 22 17:41:49 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Sat Dec 22 17:41:49 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Sat Dec 22 17:41:49 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses" for 192.168.56.1 at Sat Dec 22 17:42:15 +0900 2012
+Processing by AddressesController#index as HTML
+  [1m[35mAddress Load (0.1ms)[0m  SELECT "addresses".* FROM "addresses" 
+  Rendered addresses/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 15ms (Views: 9.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Sat Dec 22 17:42:16 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Sat Dec 22 17:42:16 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Sat Dec 22 17:42:16 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Sat Dec 22 17:42:16 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Sat Dec 22 17:42:21 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Sat Dec 22 17:42:21 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Sat Dec 22 17:42:21 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Sat Dec 22 17:42:21 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Sat Dec 22 17:42:21 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses" for 192.168.56.1 at Sat Dec 22 17:55:29 +0900 2012
+Processing by AddressesController#index as HTML
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT "addresses".* FROM "addresses" [0m
+  Rendered addresses/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Sat Dec 22 17:55:30 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Sat Dec 22 17:55:30 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Sat Dec 22 17:55:30 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Sat Dec 22 17:55:30 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Sat Dec 22 17:55:30 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Sat Dec 22 17:55:30 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Sat Dec 22 17:55:30 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Sat Dec 22 17:55:30 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Sat Dec 22 17:55:30 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 192.168.56.1 at Sat Dec 22 18:01:55 +0900 2012
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.9) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.9) lib/rails/commands.rb:55
+  railties (3.2.9) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.9) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /var/lib/gems/1.8/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/addresses" for 192.168.56.1 at Sat Dec 22 18:02:00 +0900 2012
+Processing by AddressesController#index as HTML
+  [1m[35mAddress Load (0.2ms)[0m  SELECT "addresses".* FROM "addresses" 
+  Rendered addresses/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Sat Dec 22 18:02:00 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Sat Dec 22 18:02:00 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Sat Dec 22 18:02:00 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Sat Dec 22 18:02:00 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Sat Dec 22 18:02:00 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Sat Dec 22 18:02:00 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Sat Dec 22 18:02:00 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Sat Dec 22 18:02:00 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Sat Dec 22 18:02:00 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/address2es" for 192.168.56.1 at Sat Dec 22 18:02:06 +0900 2012
+
+ActionController::RoutingError (No route matches [GET] "/address2es"):
+  actionpack (3.2.9) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.9) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  activesupport (3.2.9) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.9) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.9) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.9) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.9) lib/rails/engine.rb:479:in `call'
+  railties (3.2.9) lib/rails/application.rb:223:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.9) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+  rack (1.4.1) lib/rack/handler/webrick.rb:13:in `run'
+  rack (1.4.1) lib/rack/server.rb:265:in `start'
+  railties (3.2.9) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.9) lib/rails/commands.rb:55
+  railties (3.2.9) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.9) lib/rails/commands.rb:50
+  script/rails:6:in `require'
+  script/rails:6
+
+
+  Rendered /var/lib/gems/1.8/gems/actionpack-3.2.9/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/address2s" for 192.168.56.1 at Sat Dec 22 18:02:11 +0900 2012
+Processing by Address2sController#index as HTML
+  [1m[36mAddress2 Load (0.2ms)[0m  [1mSELECT "address2s".* FROM "address2s" [0m
+  Rendered address2s/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Sat Dec 22 18:02:11 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Sat Dec 22 18:02:11 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Sat Dec 22 18:02:11 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Sat Dec 22 18:02:16 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Sat Dec 22 18:02:16 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Sat Dec 22 18:02:16 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Sat Dec 22 18:02:16 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Sat Dec 22 18:02:16 +0900 2012
+Served asset /addresses.css - 200 OK (0ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Sat Dec 22 18:02:16 +0900 2012
+Served asset /address2s.css - 200 OK (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Sat Dec 22 18:02:16 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Sat Dec 22 18:02:16 +0900 2012
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Sat Dec 22 18:02:16 +0900 2012
+Served asset /address2s.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Sat Dec 22 18:02:16 +0900 2012
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Sat Dec 22 18:02:16 +0900 2012
+Served asset /addresses.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Sat Dec 22 18:02:16 +0900 2012
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/addresses/1" for 192.168.56.1 at Sat Dec 22 18:03:29 +0900 2012
+Processing by AddressesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAddress Load (0.2ms)[0m  SELECT "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered addresses/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Sat Dec 22 18:03:29 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Sat Dec 22 18:03:29 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses/1/edit" for 192.168.56.1 at Sat Dec 22 18:03:35 +0900 2012
+Processing by AddressesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered addresses/_form.html.erb (2.5ms)
+  Rendered addresses/edit.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Sat Dec 22 18:03:36 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Sat Dec 22 18:03:36 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/addresses/2/edit" for 192.168.56.1 at Sat Dec 22 18:03:38 +0900 2012
+Processing by AddressesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAddress Load (0.1ms)[0m  SELECT "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered addresses/_form.html.erb (3.6ms)
+  Rendered addresses/edit.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Sat Dec 22 18:03:38 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Sat Dec 22 18:03:38 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses" for 192.168.56.1 at Fri Dec 28 10:24:11 +0900 2012
+Connecting to database specified by database.yml
+Processing by AddressesController#index as HTML
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT "addresses".* FROM "addresses" [0m
+  Rendered addresses/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 158ms (Views: 99.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Fri Dec 28 10:24:12 +0900 2012
+Served asset /application.css - 200 OK (8ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Fri Dec 28 10:24:12 +0900 2012
+Served asset /address2s.css - 200 OK (2ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 28 10:24:12 +0900 2012
+Served asset /addresses.css - 200 OK (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 28 10:24:12 +0900 2012
+Served asset /scaffolds.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Fri Dec 28 10:24:12 +0900 2012
+Served asset /jquery.js - 200 OK (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Fri Dec 28 10:24:12 +0900 2012
+Served asset /jquery_ujs.js - 200 OK (5ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Fri Dec 28 10:24:12 +0900 2012
+Served asset /address2s.js - 200 OK (3ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 28 10:24:12 +0900 2012
+Served asset /addresses.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Fri Dec 28 10:24:12 +0900 2012
+Served asset /application.js - 200 OK (62ms)
+
+
+Started GET "/address2s" for 192.168.56.1 at Fri Dec 28 10:24:16 +0900 2012
+Processing by Address2sController#index as HTML
+  [1m[35mAddress2 Load (0.3ms)[0m  SELECT "address2s".* FROM "address2s" 
+  Rendered address2s/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 31ms (Views: 15.5ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/address2s/new" for 192.168.56.1 at Fri Dec 28 10:24:26 +0900 2012
+Processing by Address2sController#new as HTML
+  Rendered address2s/_form.html.erb (9.7ms)
+  Rendered address2s/new.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 20ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/address2s" for 192.168.56.1 at Fri Dec 28 10:24:30 +0900 2012
+Processing by Address2sController#create as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Create Address2", "authenticity_token"=>"RWtV9zgK5BZ0eb6vvXb2GmZygYwkHZNKKs/TLbNMBDg=", "address2"=>{"name"=>"fafa", "email"=>"fafa"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (6.5ms)[0m  INSERT INTO "address2s" ("created_at", "email", "name", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Fri, 28 Dec 2012 01:24:30 UTC +00:00], ["email", "fafa"], ["name", "fafa"], ["updated_at", Fri, 28 Dec 2012 01:24:30 UTC +00:00]]
+  [1m[36m (14.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://192.168.56.101:3000/address2s/2
+Completed 302 Found in 27ms (ActiveRecord: 21.0ms)
+
+
+Started GET "/address2s/2" for 192.168.56.1 at Fri Dec 28 10:24:30 +0900 2012
+Processing by Address2sController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAddress2 Load (0.3ms)[0m  SELECT "address2s".* FROM "address2s" WHERE "address2s"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered address2s/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 15ms (Views: 11.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/address2s" for 192.168.56.1 at Fri Dec 28 10:24:32 +0900 2012
+Processing by Address2sController#index as HTML
+  [1m[36mAddress2 Load (0.2ms)[0m  [1mSELECT "address2s".* FROM "address2s" [0m
+  Rendered address2s/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/addresses" for 192.168.56.1 at Fri Dec 28 10:24:37 +0900 2012
+Processing by AddressesController#index as HTML
+  [1m[35mAddress Load (0.2ms)[0m  SELECT "addresses".* FROM "addresses" 
+  Rendered addresses/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/addresses" for 192.168.56.1 at Fri Dec 28 10:26:48 +0900 2012
+Processing by AddressesController#index as HTML
+  [1m[36mAddress Load (0.3ms)[0m  [1mSELECT "addresses".* FROM "addresses" [0m
+  Rendered addresses/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/addresses" for 192.168.56.1 at Fri Dec 28 10:26:48 +0900 2012
+Processing by AddressesController#index as HTML
+  [1m[35mAddress Load (0.3ms)[0m  SELECT "addresses".* FROM "addresses" 
+  Rendered addresses/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Fri Dec 28 10:26:49 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Fri Dec 28 10:26:49 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 28 10:26:49 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 28 10:26:49 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Fri Dec 28 10:26:49 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Fri Dec 28 10:26:49 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Fri Dec 28 10:26:49 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 28 10:26:49 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Fri Dec 28 10:26:49 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Fri Dec 28 10:26:49 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Fri Dec 28 10:26:49 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 28 10:26:49 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 28 10:26:49 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Fri Dec 28 10:26:49 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Fri Dec 28 10:26:49 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Fri Dec 28 10:26:49 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 28 10:26:49 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Fri Dec 28 10:26:49 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses" for 192.168.56.1 at Fri Dec 28 10:26:55 +0900 2012
+Processing by AddressesController#index as HTML
+  [1m[36mAddress Load (0.3ms)[0m  [1mSELECT "addresses".* FROM "addresses" [0m
+  Rendered addresses/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 14ms (Views: 11.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Fri Dec 28 10:26:55 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Fri Dec 28 10:26:55 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 28 10:26:55 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 28 10:26:55 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Fri Dec 28 10:26:56 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Fri Dec 28 10:26:56 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Fri Dec 28 10:26:56 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 28 10:26:56 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Fri Dec 28 10:26:56 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses" for 192.168.56.1 at Fri Dec 28 10:35:20 +0900 2012
+Processing by AddressesController#index as HTML
+  [1m[35mAddress Load (0.2ms)[0m  SELECT "addresses".* FROM "addresses" 
+  Rendered addresses/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Fri Dec 28 10:35:20 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Fri Dec 28 10:35:20 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 28 10:35:20 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 28 10:35:20 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Fri Dec 28 10:35:20 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Fri Dec 28 10:35:20 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Fri Dec 28 10:35:20 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 28 10:35:20 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Fri Dec 28 10:35:20 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses" for 192.168.56.1 at Fri Dec 28 10:35:30 +0900 2012
+Processing by AddressesController#index as HTML
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT "addresses".* FROM "addresses" [0m
+  Rendered addresses/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Fri Dec 28 10:35:30 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 28 10:35:30 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Fri Dec 28 10:35:30 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Fri Dec 28 10:35:30 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Fri Dec 28 10:35:30 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 28 10:35:30 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Fri Dec 28 10:35:30 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 28 10:35:30 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Fri Dec 28 10:35:30 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses" for 192.168.56.1 at Fri Dec 28 10:40:55 +0900 2012
+Processing by AddressesController#index as HTML
+  [1m[35mAddress Load (0.1ms)[0m  SELECT "addresses".* FROM "addresses" 
+  Rendered addresses/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Fri Dec 28 10:40:55 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 28 10:40:55 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 28 10:40:55 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Fri Dec 28 10:40:55 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Fri Dec 28 10:40:55 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Fri Dec 28 10:40:55 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Fri Dec 28 10:40:55 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 28 10:40:55 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Fri Dec 28 10:40:55 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses" for 192.168.56.1 at Fri Dec 28 10:42:56 +0900 2012
+Processing by AddressesController#index as HTML
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT "addresses".* FROM "addresses" [0m
+  Rendered addresses/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Fri Dec 28 10:42:56 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Fri Dec 28 10:42:56 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Fri Dec 28 10:42:56 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 28 10:42:56 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 28 10:42:56 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Fri Dec 28 10:42:56 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Fri Dec 28 10:42:56 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 28 10:42:56 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Fri Dec 28 10:42:56 +0900 2012
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/addresses/1/edit" for 192.168.56.1 at Fri Dec 28 10:45:33 +0900 2012
+Processing by AddressesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAddress Load (0.2ms)[0m  SELECT "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered addresses/_form.html.erb (2.7ms)
+  Rendered addresses/edit.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Fri Dec 28 10:45:33 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Fri Dec 28 10:45:33 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 28 10:45:33 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 28 10:45:33 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Fri Dec 28 10:45:33 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Fri Dec 28 10:45:33 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Fri Dec 28 10:45:33 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 28 10:45:33 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Fri Dec 28 10:45:33 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses/1" for 192.168.56.1 at Fri Dec 28 10:45:48 +0900 2012
+Processing by AddressesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered addresses/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Fri Dec 28 10:45:48 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Fri Dec 28 10:45:48 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Fri Dec 28 10:45:48 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Fri Dec 28 10:45:48 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 28 10:45:48 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 28 10:45:48 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Fri Dec 28 10:45:48 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 28 10:45:48 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Fri Dec 28 10:45:48 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses/1/edit" for 192.168.56.1 at Fri Dec 28 10:46:21 +0900 2012
+Processing by AddressesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAddress Load (0.1ms)[0m  SELECT "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered addresses/_form.html.erb (2.9ms)
+  Rendered addresses/edit.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Fri Dec 28 10:46:21 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 28 10:46:21 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Fri Dec 28 10:46:21 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Fri Dec 28 10:46:21 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Fri Dec 28 10:46:21 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 28 10:46:21 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Fri Dec 28 10:46:21 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 28 10:46:21 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Fri Dec 28 10:46:21 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses" for 192.168.56.1 at Fri Dec 28 10:46:55 +0900 2012
+Processing by AddressesController#index as HTML
+  [1m[36mAddress Load (0.3ms)[0m  [1mSELECT "addresses".* FROM "addresses" [0m
+  Rendered addresses/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 9ms (Views: 7.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Fri Dec 28 10:47:01 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Fri Dec 28 10:47:01 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 28 10:47:01 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 28 10:47:01 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Fri Dec 28 10:47:01 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Fri Dec 28 10:47:01 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Fri Dec 28 10:47:01 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 28 10:47:01 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Fri Dec 28 10:47:01 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses/new" for 192.168.56.1 at Fri Dec 28 10:47:26 +0900 2012
+Processing by AddressesController#new as HTML
+  Rendered addresses/_form.html.erb (2.4ms)
+  Rendered addresses/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 63ms (Views: 62.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/addresses/new" for 192.168.56.1 at Fri Dec 28 10:47:26 +0900 2012
+Processing by AddressesController#new as HTML
+  Rendered addresses/_form.html.erb (2.5ms)
+  Rendered addresses/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Fri Dec 28 10:47:26 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 28 10:47:26 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Fri Dec 28 10:47:26 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Fri Dec 28 10:47:26 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 28 10:47:26 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Fri Dec 28 10:47:26 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Fri Dec 28 10:47:26 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 28 10:47:26 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Fri Dec 28 10:47:26 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses/new" for 192.168.56.1 at Fri Dec 28 10:47:44 +0900 2012
+Processing by AddressesController#new as HTML
+  Rendered addresses/_form.html.erb (2.1ms)
+  Rendered addresses/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Fri Dec 28 10:47:45 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Fri Dec 28 10:47:45 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Fri Dec 28 10:47:45 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 28 10:47:45 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Fri Dec 28 10:47:45 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 28 10:47:45 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Fri Dec 28 10:47:45 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 28 10:47:45 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Fri Dec 28 10:47:45 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses" for 192.168.56.1 at Fri Dec 28 10:47:47 +0900 2012
+Processing by AddressesController#index as HTML
+  [1m[35mAddress Load (0.2ms)[0m  SELECT "addresses".* FROM "addresses" 
+  Rendered addresses/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Fri Dec 28 10:47:47 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 28 10:47:47 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 28 10:47:47 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Fri Dec 28 10:47:47 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Fri Dec 28 10:47:47 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Fri Dec 28 10:47:47 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Fri Dec 28 10:47:47 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 28 10:47:47 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Fri Dec 28 10:47:47 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses" for 192.168.56.1 at Fri Dec 28 10:49:23 +0900 2012
+Processing by AddressesController#index as HTML
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT "addresses".* FROM "addresses" [0m
+  Rendered addresses/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 28 10:49:23 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Fri Dec 28 10:49:23 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Fri Dec 28 10:49:23 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Fri Dec 28 10:49:23 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Fri Dec 28 10:49:23 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 28 10:49:23 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Fri Dec 28 10:49:23 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 28 10:49:23 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Fri Dec 28 10:49:23 +0900 2012
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/addresses/1" for 192.168.56.1 at Fri Dec 28 10:49:59 +0900 2012
+Processing by AddressesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAddress Load (0.1ms)[0m  SELECT "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered addresses/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Fri Dec 28 10:49:59 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Fri Dec 28 10:49:59 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 28 10:49:59 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 28 10:49:59 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Fri Dec 28 10:49:59 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Fri Dec 28 10:49:59 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Fri Dec 28 10:49:59 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 28 10:49:59 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Fri Dec 28 10:49:59 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses/1" for 192.168.56.1 at Fri Dec 28 10:51:15 +0900 2012
+Processing by AddressesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered addresses/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/addresses/1" for 192.168.56.1 at Fri Dec 28 10:51:15 +0900 2012
+Processing by AddressesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAddress Load (0.1ms)[0m  SELECT "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered addresses/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 28 10:51:15 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Fri Dec 28 10:51:15 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Fri Dec 28 10:51:15 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Fri Dec 28 10:51:15 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 28 10:51:15 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Fri Dec 28 10:51:15 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Fri Dec 28 10:51:15 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 28 10:51:15 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Fri Dec 28 10:51:15 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses" for 192.168.56.1 at Fri Dec 28 10:51:22 +0900 2012
+Processing by AddressesController#index as HTML
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT "addresses".* FROM "addresses" [0m
+  Rendered addresses/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Fri Dec 28 10:51:22 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 28 10:51:22 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Fri Dec 28 10:51:22 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 28 10:51:22 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Fri Dec 28 10:51:22 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Fri Dec 28 10:51:22 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Fri Dec 28 10:51:22 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 28 10:51:22 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Fri Dec 28 10:51:22 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses/2" for 192.168.56.1 at Fri Dec 28 10:51:28 +0900 2012
+Processing by AddressesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAddress Load (0.1ms)[0m  SELECT "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered addresses/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Fri Dec 28 10:51:28 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 28 10:51:28 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Fri Dec 28 10:51:28 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Fri Dec 28 10:51:28 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 28 10:51:28 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Fri Dec 28 10:51:28 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Fri Dec 28 10:51:28 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 28 10:51:28 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Fri Dec 28 10:51:28 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses/2/edit" for 192.168.56.1 at Fri Dec 28 10:51:30 +0900 2012
+Processing by AddressesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered addresses/_form.html.erb (1.5ms)
+  Rendered addresses/edit.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Fri Dec 28 10:51:30 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 28 10:51:30 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 28 10:51:30 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Fri Dec 28 10:51:30 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Fri Dec 28 10:51:30 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Fri Dec 28 10:51:30 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Fri Dec 28 10:51:30 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 28 10:51:30 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Fri Dec 28 10:51:30 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses/2" for 192.168.56.1 at Fri Dec 28 10:51:33 +0900 2012
+Processing by AddressesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAddress Load (0.1ms)[0m  SELECT "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered addresses/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Fri Dec 28 10:51:33 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 28 10:51:33 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Fri Dec 28 10:51:33 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 28 10:51:33 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Fri Dec 28 10:51:38 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Fri Dec 28 10:51:38 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Fri Dec 28 10:51:38 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 28 10:51:38 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Fri Dec 28 10:51:38 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses/2" for 192.168.56.1 at Fri Dec 28 10:58:25 +0900 2012
+Processing by AddressesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered addresses/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Fri Dec 28 10:58:25 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Fri Dec 28 10:58:25 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 28 10:58:25 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 28 10:58:25 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Fri Dec 28 10:58:25 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Fri Dec 28 10:58:25 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Fri Dec 28 10:58:25 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 28 10:58:25 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Fri Dec 28 10:58:25 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses/2/edit" for 192.168.56.1 at Fri Dec 28 10:58:28 +0900 2012
+Processing by AddressesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAddress Load (0.1ms)[0m  SELECT "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered addresses/_form.html.erb (2.6ms)
+  Rendered addresses/edit.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Fri Dec 28 10:58:28 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Fri Dec 28 10:58:28 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 28 10:58:28 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Fri Dec 28 10:58:28 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 28 10:58:28 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Fri Dec 28 10:58:28 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Fri Dec 28 10:58:28 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 28 10:58:28 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Fri Dec 28 10:58:28 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses/2" for 192.168.56.1 at Fri Dec 28 10:58:29 +0900 2012
+Processing by AddressesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT "addresses".* FROM "addresses" WHERE "addresses"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered addresses/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Fri Dec 28 10:58:30 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Fri Dec 28 10:58:30 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Fri Dec 28 10:58:30 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 28 10:58:30 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Fri Dec 28 10:58:30 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 28 10:58:30 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Fri Dec 28 10:58:30 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 28 10:58:30 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Fri Dec 28 10:58:30 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses" for 192.168.56.1 at Fri Dec 28 10:58:31 +0900 2012
+Processing by AddressesController#index as HTML
+  [1m[35mAddress Load (0.2ms)[0m  SELECT "addresses".* FROM "addresses" 
+  Rendered addresses/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Fri Dec 28 10:58:31 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Fri Dec 28 10:58:31 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Fri Dec 28 10:58:31 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 28 10:58:31 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Fri Dec 28 10:58:31 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 28 10:58:31 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Fri Dec 28 10:58:31 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 28 10:58:31 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Fri Dec 28 10:58:31 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses" for 192.168.56.1 at Fri Dec 28 11:41:11 +0900 2012
+Processing by AddressesController#index as HTML
+  [1m[36mAddress Load (0.2ms)[0m  [1mSELECT "addresses".* FROM "addresses" [0m
+  Rendered addresses/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Fri Dec 28 11:41:12 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 28 11:41:12 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Fri Dec 28 11:41:12 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 28 11:41:12 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Fri Dec 28 11:41:12 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Fri Dec 28 11:41:12 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Fri Dec 28 11:41:12 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 28 11:41:12 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Fri Dec 28 11:41:12 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses" for 192.168.56.1 at Fri Dec 28 11:41:42 +0900 2012
+Processing by AddressesController#index as HTML
+  [1m[35mAddress Load (0.2ms)[0m  SELECT "addresses".* FROM "addresses" 
+  Rendered addresses/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Fri Dec 28 11:41:42 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Fri Dec 28 11:41:42 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 28 11:41:42 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 28 11:41:42 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Fri Dec 28 11:41:42 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Fri Dec 28 11:41:42 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Fri Dec 28 11:41:42 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 28 11:41:42 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Fri Dec 28 11:41:42 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses" for 192.168.56.1 at Fri Dec 28 12:59:38 +0900 2012
+Processing by AddressesController#index as HTML
+  [1m[36mAddress Load (0.4ms)[0m  [1mSELECT "addresses".* FROM "addresses" [0m
+  Rendered addresses/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Fri Dec 28 12:59:39 +0900 2012
+Served asset /address2s.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Fri Dec 28 12:59:39 +0900 2012
+Served asset /address2s.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Fri Dec 28 12:59:39 +0900 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Fri Dec 28 12:59:39 +0900 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Fri Dec 28 12:59:39 +0900 2012
+Served asset /addresses.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Fri Dec 28 12:59:39 +0900 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Fri Dec 28 12:59:39 +0900 2012
+Served asset /addresses.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Fri Dec 28 12:59:39 +0900 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Fri Dec 28 12:59:39 +0900 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/addresses" for 192.168.56.1 at Tue Jan 01 00:32:13 +0900 2013
+Connecting to database specified by database.yml
+Processing by AddressesController#index as HTML
+  [1m[36mAddress Load (0.1ms)[0m  [1mSELECT "addresses".* FROM "addresses" [0m
+  Rendered addresses/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 147ms (Views: 90.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Tue Jan 01 00:32:13 +0900 2013
+Served asset /scaffolds.css - 200 OK (2ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Tue Jan 01 00:32:13 +0900 2013
+Served asset /addresses.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Tue Jan 01 00:32:13 +0900 2013
+Served asset /jquery_ujs.js - 200 OK (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Tue Jan 01 00:32:13 +0900 2013
+Served asset /jquery.js - 200 OK (11ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Tue Jan 01 00:32:13 +0900 2013
+Served asset /address2s.css - 200 OK (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Tue Jan 01 00:32:13 +0900 2013
+Served asset /application.css - 200 OK (5ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Tue Jan 01 00:32:13 +0900 2013
+Served asset /address2s.js - 200 OK (2ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Tue Jan 01 00:32:13 +0900 2013
+Served asset /addresses.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Tue Jan 01 00:32:13 +0900 2013
+Served asset /application.js - 200 OK (65ms)
+
+
+Started GET "/addresses" for 192.168.56.1 at Sat Jan 05 15:54:30 +0900 2013
+Connecting to database specified by database.yml
+Processing by AddressesController#index as HTML
+  [1m[36mAddress Load (0.3ms)[0m  [1mSELECT "addresses".* FROM "addresses" [0m
+  Rendered addresses/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 136ms (Views: 91.5ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.56.1 at Sat Jan 05 15:54:30 +0900 2013
+Served asset /jquery.js - 200 OK (7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.56.1 at Sat Jan 05 15:54:30 +0900 2013
+Served asset /scaffolds.css - 200 OK (7ms)
+
+
+Started GET "/assets/address2s.css?body=1" for 192.168.56.1 at Sat Jan 05 15:54:30 +0900 2013
+Served asset /address2s.css - 200 OK (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.56.1 at Sat Jan 05 15:54:30 +0900 2013
+Served asset /application.css - 200 OK (17ms)
+
+
+Started GET "/assets/addresses.css?body=1" for 192.168.56.1 at Sat Jan 05 15:54:30 +0900 2013
+Served asset /addresses.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.56.1 at Sat Jan 05 15:54:30 +0900 2013
+Served asset /jquery_ujs.js - 200 OK (8ms)
+
+
+Started GET "/assets/address2s.js?body=1" for 192.168.56.1 at Sat Jan 05 15:54:30 +0900 2013
+Served asset /address2s.js - 200 OK (4ms)
+
+
+Started GET "/assets/addresses.js?body=1" for 192.168.56.1 at Sat Jan 05 15:54:30 +0900 2013
+Served asset /addresses.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 192.168.56.1 at Sat Jan 05 15:54:30 +0900 2013
+Served asset /application.js - 200 OK (55ms)
